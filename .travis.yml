@@ -67,11 +67,11 @@ script:
   - buildExampleSketch ArduinoIoTCloud_Travis_CI
   - |
     if [ "$BOARD" == "arduino:samd:mkr1000" ] || [ "$BOARD" == "arduino:samd:mkrwifi1010" ];
-    then buildExampleSketch WiFi_Cloud_Blink;
+    then buildExampleSketch MKR_1000_MKR_WIFI_1010_Getting_Started_Cloud_Blink;
     fi
   - |
     if [ "$BOARD" == "arduino:samd:mkrgsm1400" ];
-    then buildExampleSketch GSM_Cloud_Blink;
+    then buildExampleSketch MKR_GSM_1400_Getting_Started_Cloud_Blink;
     fi
   - buildExampleUtilitySketch Provisioning
 notifications:
